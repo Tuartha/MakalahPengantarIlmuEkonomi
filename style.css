@@ -147,8 +147,9 @@
             width: 100%;
             height: 50%;
             display: flex;
-            align-items: stretch;
-            justify-content: center;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
             flex-wrap: wrap;
             color: 2c3e50;
         }
@@ -156,13 +157,15 @@
         .chart-placeholder .wrapper {
             display: flex;
             flex-direction: column;
-            align-items: center;
+            justify-content: center;
             margin: 1rem;
-            width: 40%;
+            width: 100%;
         }
 
-        .chart-placeholder div img {
-            width: 20rem;
+        .wrapper img {
+            width: 50%;
+            display: block;
+            margin: 0 auto;
         }
 
         .chart-placeholder div h4 {
