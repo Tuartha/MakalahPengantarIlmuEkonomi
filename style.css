@@ -8,7 +8,7 @@
             font-family: 'Georgia', 'Times New Roman', serif;
             line-height: 1.8;
             color: #333;
-            background-color: #f9f9f9;
+            background-color: #d9d9d9;
         }
 
         .container {
@@ -16,7 +16,7 @@
             margin: 0 auto;
             padding: 40px 20px 0;
             background-color: white;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            box-shadow: 0 0 100px rgba(0,0,0,0.1);
         }
 
         header {
@@ -130,25 +130,35 @@
         .reflection-box {
             margin: 40px 0 40px;
             border-radius: 4px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .reflection-box h2 {
+            font-size: 1.8em;
+            color: #2c3e50;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3498db;
         }
 
         .chart-placeholder {
             width: 100%;
             height: 50%;
-            /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
             display: flex;
-            align-items: center;
+            align-items: stretch;
             justify-content: center;
             flex-wrap: wrap;
             color: 2c3e50;
         }
 
-        .chart-placeholder div {
+        .chart-placeholder .wrapper {
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
             margin: 1rem;
+            width: 40%;
         }
 
         .chart-placeholder div img {
@@ -159,7 +169,7 @@
             width: 100%;
             text-align: center;
             margin-top: 1rem;
-            font-size: .7rem;
+            font-size: 1rem;
             color: #555;
         }
 
@@ -203,5 +213,17 @@
             .data-table th,
             .data-table td {
                 padding: 8px;
+            }
+
+            .chart-placeholder div img {
+                width: 25rem;
+            }
+
+            .chart-placeholder div h4 {
+                font-size: 1rem;
+            }
+
+            .chart-placeholder .wrapper {
+                width: 100%;
             }
         }
