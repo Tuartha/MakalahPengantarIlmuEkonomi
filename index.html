@@ -1,55 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ReinaBlog</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Blog analisis ekonomi dan keuangan oleh Ni Putu Reina Savitri. Membahas pengaruh cuaca terhadap permintaan produk, perilaku konsumen, dan dinamika UMKM.">
+    <meta name="keywords" content="analisis ekonomi, permintaan produk, cuaca dan ekonomi, UMKM, perilaku konsumen, es buah, gorengan">
+    <meta name="author" content="Ni Putu Reina Savitri">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="ReinaBlog - Analisis Ekonomi dan Perilaku Konsumen">
+    <meta property="og:description" content="Analisis pengaruh cuaca terhadap permintaan produk: Studi kasus es buah dan gorengan">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://reina-blog.vercel.app">
+    <meta property="og:image" content="img/cover.jpeg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ReinaBlog - Analisis Ekonomi dan Perilaku Konsumen">
+    <meta name="twitter:description" content="Analisis pengaruh cuaca terhadap permintaan produk">
+    
+    <title>ReinaBlog - Analisis Ekonomi dan Perilaku Konsumen | Ni Putu Reina Savitri</title>
+    
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="canonical" href="https://reina-blog.vercel.app">
 </head>
 <body>
-    <header class="nav">
+    <header class="nav" role="banner">
         <h1>ReinaBlog</h1> 
-        <input type="text" placeholder="Search...">
+        <div class="search-wrapper">
+            <input type="search" placeholder="Search..." aria-label="Search blog posts">
+        </div>
     </header>
 
-    <main class="main-content">
-        <article class="blog-post">
-            <h2>ANALISIS PENGARUH PERUBAHAN CUACA TERHADAP PERGESERAN PERMINTAAN: STUDI KASUS PRODUK ES BUAH DAN GORENGAN</h2>
-            <p>Published by <span>Ni Putu Reina Savitri</span> on December 13, 2025</p>
-            <div class="blog">
-                <a href="blog.html">
-                    <img src="img/cover.jpeg" alt="Grafik Penjualan Es Buah dan Gorengan">
+    <main class="main-content" role="main">
+        <article class="blog-post" itemscope itemtype="http://schema.org/BlogPosting">
+            <h2 itemprop="headline">ANALISIS PENGARUH PERUBAHAN CUACA TERHADAP PERGESERAN PERMINTAAN: STUDI KASUS PRODUK ES BUAH DAN GORENGAN</h2>
+            <p class="post-meta">
+                Published by
+                <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                     <span itemprop="name">Ni Putu Reina Savitri</span>
+                </span> 
+                on <time itemprop="datePublished" datetime="2025-12-13">December 13, 2025</time>
+            </p>
+            <div class="blog" itemprop="articleBody">
+                <a href="blog.html" aria-label="Read full article about weather impact on demand">
+                    <img src="img/cover.jpeg" alt="Grafik analisis penjualan es buah dan gorengan berdasarkan kondisi cuaca" itemprop="image" loading="lazy">
                     <p>Penelitian ini menganalisis pengaruh perubahan cuaca (panas, hujan, berawan) terhadap permintaan es buah dan gorengan. Hasilnya menunjukkan bahwa cuaca sangat memengaruhi permintaan kedua produk, dengan es buah meningkat saat panas dan gorengan naik saat hujan/dingin. Terjadi pergeseran permintaan (demand shift) yang jelas, di mana es buah lebih sensitif. Pedagang disarankan menyesuaikan produksi berdasarkan prakiraan cuaca.</p>
                     <p class="link">Continue Reading <i class="fa-solid fa-arrow-right"></i></p>
                 </a>
             </div>
         </article>
-        <article class="contact">
+
+        <aside class="contact" role="complementary">
             <div class="head-content">
                 <div class="content">
                     <h1>Ni Putu Reina Savitri</h1>
                 </div>
-                <img src="img/profile.jpg" alt="">
+                <img src="img/profile.jpg" alt="Profile photo of Ni Putu Reina Savitri" loading="lazy">
             </div>
-            <p class="description"">Saya merupakan mahasiswa Universitas Primakara pada Program Studi Akuntansi yang memiliki ketertarikan pada analisis ekonomi dan keuangan dalam konteks kehidupan sehari-hari. Melalui blog ini, saya membagikan berbagai pemikiran, hasil observasi lapangan, serta analisis sederhana terkait perilaku konsumen, dinamika permintaan, dan faktor-faktor yang memengaruhi aktivitas usaha, khususnya pada skala UMKM. Blog ini juga menjadi ruang pembelajaran dan dokumentasi akademik yang bertujuan untuk menghubungkan teori yang diperoleh di bangku perkuliahan dengan kondisi nyata di masyarakat.</p>
-            <div class="social-media">
+            <p class="description">Saya merupakan mahasiswa Universitas Primakara pada Program Studi Akuntansi yang memiliki ketertarikan pada analisis ekonomi dan keuangan dalam konteks kehidupan sehari-hari. Melalui blog ini, saya membagikan berbagai pemikiran, hasil observasi lapangan, serta analisis sederhana terkait perilaku konsumen, dinamika permintaan, dan faktor-faktor yang memengaruhi aktivitas usaha, khususnya pada skala UMKM. Blog ini juga menjadi ruang pembelajaran dan dokumentasi akademik yang bertujuan untuk menghubungkan teori yang diperoleh di bangku perkuliahan dengan kondisi nyata di masyarakat.</p>
+            <nav class="social-media" aria-label="Social media links">
                 <h4>Let's Connect</h4>
                 <div class="icons">
-                    <a href="https://www.instagram.com/reinasav/" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
-                    <a href="https://www.linkedin.com/in/ni-putu-reina-savitri-927b2524b/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=niputureinasavitri28@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i> Gmail</a>
+                    <a href="https://www.instagram.com/reinasav/" target="_blank" rel="noopener noreferrer" aria-label="Visit Instagram profile">
+                        <i class="fa-brands fa-instagram" aria-hidden="true"></i> Instagram
+                    </a>
+                    <a href="https://www.linkedin.com/in/ni-putu-reina-savitri-927b2524b/" target="_blank" rel="noopener noreferrer" aria-label="Visit LinkedIn profile">
+                        <i class="fa-brands fa-linkedin" aria-hidden="true"></i> LinkedIn
+                    </a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=niputureinasavitri28@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Send email">
+                        <i class="fa-regular fa-envelope" aria-hidden="true"></i> Gmail
+                    </a>
                 </div>
-            </div>
-        </article>
+            </nav>
+        </aside>
     </main>
-    <footer>
+
+    <footer role="contentinfo">
         <p class="name">Reina</p>
-        <div class="footer-icons">
-            <a href="https://www.instagram.com/reinasav/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/reina-savitri-354069392/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=niputureinasavitri28@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
-        </div>
+        <nav class="footer-icons" aria-label="Footer social media links">
+            <a href="https://www.instagram.com/reinasav/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/reina-savitri-354069392/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=niputureinasavitri28@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email">
+                <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+            </a>
+        </nav>
     </footer>
 </body>
 </html>
